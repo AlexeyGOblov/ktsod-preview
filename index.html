@@ -41,7 +41,7 @@ body{font-family:'Muller','Segoe UI',sans-serif;background:var(--bg);color:var(-
 @media(min-width:1700px){.wrap{max-width:1340px}} /* большие/4К мониторы: контент шире, не «островок» */
 a{color:inherit;text-decoration:none}
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-weight:600;font-size:16px;border:none;border-radius:11px;padding:15px 28px;cursor:pointer;transition:color .15s,background-color .15s,border-color .15s,box-shadow .15s,transform .15s,filter .15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-weight:700;font-size:16px;border:none;border-radius:11px;padding:15px 28px;cursor:pointer;transition:color .15s,background-color .15s,border-color .15s,box-shadow .15s,transform .15s,filter .15s}
 .btn-pri{background:var(--fill);color:#fff;box-shadow:0 10px 28px rgba(10,108,176,.32)}.btn-pri:hover{filter:brightness(1.08)}
 .btn-gh{background:#fff;color:var(--ink);border:1px solid var(--line)}.btn-gh:hover{border-color:var(--blue);color:var(--blue-dk)}
 .btn-sm{padding:13px 22px;font-size:14.5px}
@@ -64,7 +64,6 @@ header{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:rg
 .hic{width:36px;height:36px;border-radius:9px;border:1px solid var(--line);display:grid;place-items:center;color:var(--blue-dk);background:#fff;transition:color .15s,background-color .15s,border-color .15s,box-shadow .15s,transform .15s,filter .15s}
 .hic:hover{border-color:var(--blue);background:var(--bg2)}
 .hic svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2}
-.burger{display:none}
 /* HERO — calm minimal */
 .hero{overflow:hidden;padding:118px 0 124px;text-align:center}
 .hero::before{content:"";position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:1300px;height:900px;background:radial-gradient(circle at 50% 30%,rgba(14,143,224,.12),transparent 55%),radial-gradient(circle at 65% 55%,rgba(16,182,188,.09),transparent 55%);filter:blur(10px);z-index:0;pointer-events:none}
@@ -77,7 +76,7 @@ h1 em{font-style:normal;background:var(--grad-text);-webkit-background-clip:text
 .lead{color:var(--muted);font-size:20px;line-height:1.55;max-width:600px;margin:0 auto 38px}
 .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .hero-meta{display:flex;gap:40px;justify-content:center;margin-top:64px;flex-wrap:wrap}
-.hm{text-align:center}.hm .v{font-size:30px;font-weight:800;letter-spacing:-.02em}.hm .k{font-size:13.5px;color:var(--muted);margin-top:2px}
+.hm{text-align:center}.hm .v{font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}.hm .k{font-size:13.5px;color:var(--muted);margin-top:2px}
 /* trust strip */
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;padding:20px 0}
 .trust .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center}
@@ -95,11 +94,11 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
 #tasks .ttab.act{border-color:var(--blue);background:#e8f4fc;color:var(--blue-dk)}
 #tasks .tpanel{margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 18px 44px rgba(15,29,43,.08);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);overflow:hidden}
 #tasks .tpl{padding:26px 28px}
-#tasks .tpd{font-size:15.5px;color:var(--muted);line-height:1.6;min-height:70px}
+#tasks .tpd{font-size:15.5px;color:var(--muted);line-height:1.6;min-height:70px;max-width:62ch}
 #tasks .tcells{display:flex;gap:14px;margin-top:18px;flex-wrap:wrap}
 #tasks .tcell{background:var(--bg2);border-radius:13px;padding:13px 16px;flex:1;min-width:200px}
-#tasks .tcell .k{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-dk)}
-#tasks .tcell .v{font-size:15px;font-weight:700;margin-top:4px;line-height:1.35;min-height:38px}
+#tasks .tcell .k{font-size:11.5px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+#tasks .tcell .v{font-size:16px;font-weight:700;margin-top:4px;line-height:1.35;min-height:42px}
 #tasks .tcell .s{font-size:12.5px;color:var(--muted);margin-top:2px}
 #tasks .tlinks{display:flex;gap:22px;margin-top:20px;flex-wrap:wrap}
 #tasks .tlink{font-size:14px;font-weight:700;color:var(--blue-dk)}
@@ -198,7 +197,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
 .tco-card-v{font-size:27px;font-weight:700;color:var(--blue-dk);letter-spacing:-.02em;margin:8px 0 6px}
 .tco-option p{font-size:14px;color:var(--muted);line-height:1.5}
 .tco-when{margin-top:14px;font-size:13.5px;color:var(--ink);line-height:1.5;flex:1}
-.tco-when span{display:block;font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--blue-dk);margin-bottom:4px}
+.tco-when span{display:block;font-size:12.5px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .tco-option>span{font-size:13px;font-weight:600;color:var(--ink);margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
 .tco-assumption{font-size:13px;color:var(--muted);margin-top:18px;line-height:1.5}
 .tco-cta{display:flex;align-items:center;gap:16px;margin-top:18px;flex-wrap:wrap}
@@ -273,8 +272,6 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
 #process .pcol{padding:24px 18px 22px;border-right:1px solid var(--line);position:relative}
 #process .pcol::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad);opacity:.85}
 #process .pcol:last-child{border-right:none;background:linear-gradient(135deg,#0e2235,#0b1f33);color:#fff;position:relative;overflow:hidden}
-#process .pcol:last-child::before{content:"";position:absolute;right:-26px;top:-30px;width:96px;height:96px;border-radius:28px;background:rgba(14,143,224,.18);transform:rotate(18deg);pointer-events:none}
-#process .pcol:last-child::before{opacity:0}
 #process .pgn{font-size:38px;font-weight:800;letter-spacing:-.04em;line-height:1;background:var(--grad-text);-webkit-background-clip:text;background-clip:text;color:transparent}
 #process .pcol:last-child .pgn{background:none;-webkit-text-fill-color:#5cc4ec;color:#5cc4ec}
 #process .psh{font-size:15px;font-weight:700;letter-spacing:-.01em;margin-top:10px;line-height:1.3}
@@ -285,7 +282,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
 #faq .qa{display:grid;grid-template-columns:1fr 1fr;gap:26px 44px;margin-top:34px}
 #faq .qi{border-top:2px solid;border-image:linear-gradient(90deg,var(--blue),var(--cyan)) 1;padding-top:14px}
 #faq .qq{font-size:16px;font-weight:700;letter-spacing:-.01em;line-height:1.35}
-#faq .qa-a{font-size:14px;color:var(--muted);margin-top:7px;line-height:1.55}
+#faq .qa-a{font-size:14px;color:var(--muted);margin-top:7px;line-height:1.55;max-width:68ch}
 /* form — светлая секция, светлая половина-визитка + белая форма (ритм: тёмный квиз → светлая форма → тёмный футер) */
 .formsec{padding:78px 0;background:var(--bg2)}
 .formcard{display:grid;grid-template-columns:1.1fr 1fr;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg)}
@@ -553,9 +550,9 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
       </div>
       <div class="cresult">
         <div class="crlbl">Ориентировочная стоимость</div>
-        <div class="crprice" id="price">17–20 млн ₽</div>
+        <div class="crprice" id="price">10–13 млн ₽</div>
         <div class="crtime" id="timeline">Срок: от 3 месяцев</div>
-        <div class="crlnch" id="launch">При заказе сейчас — запуск в августе 2026</div>
+        <div class="crlnch" id="launch">При заказе сейчас — запуск через 3–5 месяцев</div>
       </div>
       <button class="btn btn-pri" style="width:100%" onclick="scrollToForm()">Получить точный расчёт и спецификацию →</button>
       <div class="calc-note">Предварительная оценка. Точную смету и состав оборудования подготовит инженер после опросного листа.</div>
