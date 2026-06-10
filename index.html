@@ -21,7 +21,7 @@
 /* ====== ДИЗАЙН-СИСТЕМА — Light Premium (утв. 2026-06-01) ====== */
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#fbfcfe;--bg2:#f2f6fb;--card:#fff;--line:#e4eaf2;--field:#8896a8;
+  --bg:#fbfcfe;--bg2:#f2f6fb;--card:#fff;--line:#e4eaf2;--field:#7b8c9f;
   --blue:#0E8FE0;--blue-dk:#0A6CB0;--cyan:#10B6BC;
   --navy:#0e2235;--navy2:#13344f;
   --ink:#0f1d2b;--muted:#5d6b7a;
@@ -37,7 +37,10 @@ html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 body{font-family:'Muller','Segoe UI',sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .wrap{max-width:1180px;margin:0 auto;padding:0 30px}
-@media(min-width:1700px){.wrap{max-width:1340px}} /* большие/4К мониторы: контент шире, не «островок» */
+@media(min-width:1700px){.wrap{max-width:1340px}} /* большие мониторы: контент шире, не «островок» */
+/* 4К: страница целиком масштабируется, чтобы не мельчить; лайтбоксу компенсируем высоту (vh не масштабируется вместе с zoom) */
+@media(min-width:2200px){body{zoom:1.22}.cfg-lb img{max-height:75vh}}
+@media(min-width:3300px){body{zoom:1.55}.cfg-lb img{max-height:58vh}}
 a{color:inherit;text-decoration:none}
 /* buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-weight:700;font-size:16px;border:none;border-radius:11px;padding:15px 28px;cursor:pointer;transition:color .15s,background-color .15s,border-color .15s,box-shadow .15s,transform .15s,filter .15s}
