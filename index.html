@@ -4,18 +4,21 @@
 <meta charset="UTF-8">
 <meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Контейнерные и модульные ЦОД под ключ — производитель Aitek DC | АйТек</title>
-<meta name="description" content="Производим контейнерные и модульные ЦОД Aitek DC по требованиям Tier III / TIA-942. От 10 млн ₽, запуск за 3–5 месяцев, под ключ. Опыт 44-ФЗ и ГОЗ. Завод во Владимире.">
+<title>Контейнерные и модульные ЦОД под ключ — АйТек КЦОД | производство во Владимире</title>
+<meta name="description" content="Производим контейнерные и модульные ЦОД линейки «АйТек КЦОД» по требованиям Tier III / TIA-942. От 10 млн ₽, запуск за 3–5 месяцев, под ключ. Опыт 44-ФЗ и ГОЗ. Завод во Владимире.">
 <link rel="canonical" href="https://www.aitek.ru/services/it-infrastruktura/tsentry-obrabotki-dannykh/konteynernye-tsody/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:url" content="https://www.aitek.ru/services/it-infrastruktura/tsentry-obrabotki-dannykh/konteynernye-tsody/">
-<meta property="og:title" content="Контейнерные и модульные ЦОД под ключ — производитель Aitek DC | АйТек">
+<meta property="og:title" content="Контейнерные и модульные ЦОД под ключ — АйТек КЦОД | производство во Владимире">
 <meta property="og:description" content="Контейнерные ЦОД Tier III / TIA-942 от производителя: от 10 млн ₽, запуск за 3–5 месяцев, под ключ. Опыт 44-ФЗ и ГОЗ.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+/* Фирменный шрифт Muller (как на aitek.ru) - кириллица из коробки */
+@font-face{font-family:'Muller';src:url('assets/fonts/MullerRegular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Muller';src:url('assets/fonts/MullerMedium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Muller';src:url('assets/fonts/MullerMedium.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Muller';src:url('assets/fonts/MullerBold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Muller';src:url('assets/fonts/MullerExtraBold.woff2') format('woff2');font-weight:800;font-style:normal;font-display:swap}
 /* ====== ДИЗАЙН-СИСТЕМА — Light Premium (утв. 2026-06-01) ====== */
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -33,7 +36,7 @@ html{scroll-behavior:smooth}
 :focus-visible{outline:2.5px solid var(--blue);outline-offset:2px}
 :focus:not(:focus-visible){outline:none}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
-body{font-family:'Sora',sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'Muller','Segoe UI',sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .wrap{max-width:1180px;margin:0 auto;padding:0 30px}
 @media(min-width:1700px){.wrap{max-width:1340px}} /* большие/4К мониторы: контент шире, не «островок» */
 a{color:inherit;text-decoration:none}
@@ -375,6 +378,26 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
 @media(max-width:900px){.nav{display:none}.htel{display:none}.hdr-cta{padding:10px 14px;font-size:13px}#tasks .tpanel{grid-template-columns:1fr}#tasks .tpr{min-height:210px;border-left:none;border-top:1px solid var(--line)}#process .pcols{grid-template-columns:1fr 1fr}#process .pcol{border-bottom:1px solid var(--line)}.formcard{grid-template-columns:1fr}}
 @media(max-width:560px){#process .pcols{grid-template-columns:1fr}}
 @media(max-width:900px){#faq .qa{grid-template-columns:1fr}}
+
+/* карточка инженера у формы (взгляд ведёт к полям) */
+.eng-card{display:flex;gap:16px;align-items:center;margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 8px 22px rgba(15,29,43,.07)}
+.eng-card img{width:128px;height:128px;border-radius:12px;object-fit:cover;object-position:50% 12%;flex:0 0 auto}
+.eng-n{font-weight:700;font-size:15px}
+.eng-r{font-size:13px;color:var(--muted);margin-top:3px;line-height:1.45}
+/* мобильная вёрстка: статы героя сеткой, полоса доверия без палок, вкладки ровно, кнопки на всю ширину */
+@media(max-width:600px){
+  .eng-card{flex-direction:column;align-items:stretch}
+  .eng-card img{width:100%;height:190px;object-position:50% 15%}
+  .hero-cta .btn{flex:1 1 100%}
+  .hero-meta,.hero-grid .hero-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 10px;margin-top:36px}
+  .hm{text-align:left}
+  .hm .v{font-size:21px}
+  .hm .k{font-size:11px}
+  .trust .wrap{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center}
+  .trust .lbl{flex-basis:100%;text-align:center}
+  .trust .sep{display:none}
+  #tasks .ttab{flex:1 1 46%;justify-content:flex-start}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -397,7 +420,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Контейнерный ЦОД Aitek DC",
+  "name": "АйТек КЦОД - контейнерный центр обработки данных",
   "description": "Модульный контейнерный центр обработки данных заводской готовности по требованиям Tier III / TIA-942 Rated 3. Конфигурации от 2 до 15 стоек, энергомодуль до 500 кВт. Производство, доставка, монтаж и пусконаладка под ключ.",
   "brand": { "@type": "Brand", "name": "АйТек" },
   "category": "Контейнерные и модульные центры обработки данных",
@@ -429,7 +452,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
     {
       "@type": "Question",
       "name": "Чем контейнерный ЦОД отличается от модульного и мобильного?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Это названия одного класса решений — центр обработки данных заводской готовности. Aitek DC — модульный ЦОД в контейнерном исполнении: модули можно стыковать и наращивать, а сам контейнер при необходимости перевезти на новую площадку, поэтому его называют и мобильным ЦОД." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Это названия одного класса решений — центр обработки данных заводской готовности. АйТек КЦОД — модульный ЦОД в контейнерном исполнении: модули можно стыковать и наращивать, а сам контейнер при необходимости перевезти на новую площадку, поэтому его называют и мобильным ЦОД." }
     },
     {
       "@type": "Question",
@@ -444,7 +467,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
     {
       "@type": "Question",
       "name": "Можно ли эксплуатировать КЦОД в сложных условиях?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Да. Aitek DC адаптируется под промышленную площадку: мороз, пыль, вибрация, требования к безопасности, автономности и резервированию." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Да. АйТек КЦОД адаптируется под промышленную площадку: мороз, пыль, вибрация, требования к безопасности, автономности и резервированию." }
     },
     {
       "@type": "Question",
@@ -469,7 +492,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
 
 <!-- ============ HEADER ============ -->
 <header><div class="wrap hb">
-  <div class="logo">АйТек <span>· Aitek DC</span></div>
+  <div class="logo">АйТек <span>· КЦОД</span></div>
   <nav class="nav">
     <a href="#tasks">Задачи</a><a href="#calc">Стоимость</a><a href="#solutions">Конфигурации</a>
     <a href="#tco">Экономика</a><a href="#cases">Проекты</a><a href="#faq">FAQ</a>
@@ -582,7 +605,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
   <div class="cfg-head">
     <div>
       <div class="sl">Решения</div>
-      <h2 class="st">Конфигурация Aitek DC под вашу задачу</h2>
+      <h2 class="st">Конфигурация АйТек КЦОД под вашу задачу</h2>
       <p class="ss">Подбираем формат ЦОД контейнерного типа под нагрузку, резервирование, ограничения площадки и сроки запуска.</p>
     </div>
     <div class="cfg-pills"><span class="cpill">2–15 стоек</span><span class="cpill">N+1 / 2N</span><span class="cpill">энергомодуль отдельно</span></div>
@@ -600,7 +623,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
     <div class="cfg-grid">
       <!-- МАЛЫЙ -->
       <article class="cfg-card on" data-card="small">
-        <div class="cfg-ph"><span class="cfg-num">01</span><img src="assets/config-small.jpeg" alt="Малый КЦОД Aitek DC, 2–5 стоек: разрез контейнера со стойками, охлаждением, ИБП и пожаротушением" loading="lazy" decoding="async" width="1440" height="810"></div>
+        <div class="cfg-ph"><span class="cfg-num">01</span><img src="assets/config-small.jpeg" alt="Малый АйТек КЦОД, 2–5 стоек: разрез контейнера со стойками, охлаждением, ИБП и пожаротушением" loading="lazy" decoding="async" width="1440" height="810"></div>
         <div class="cfg-body">
           <h3>Малый КЦОД</h3>
           <p class="cfg-lead">2–5 стоек для филиалов, лабораторий, локальных вычислительных задач и резервных площадок.</p>
@@ -611,7 +634,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
       </article>
       <!-- СРЕДНИЙ -->
       <article class="cfg-card" data-card="medium">
-        <div class="cfg-ph"><span class="cfg-num">02</span><img src="assets/config-medium.jpeg" alt="Средний КЦОД Aitek DC, 6–9 стоек: разрез контейнера с машинным залом, батарейным отсеком и охлаждением" loading="lazy" decoding="async" width="1440" height="810"></div>
+        <div class="cfg-ph"><span class="cfg-num">02</span><img src="assets/config-medium.jpeg" alt="Средний АйТек КЦОД, 6–9 стоек: разрез контейнера с машинным залом, батарейным отсеком и охлаждением" loading="lazy" decoding="async" width="1440" height="810"></div>
         <div class="cfg-body">
           <h3>Средний КЦОД</h3>
           <p class="cfg-lead">6–9 стоек для промышленности, производственных площадок и замены серверной.</p>
@@ -622,7 +645,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
       </article>
       <!-- КРУПНЫЙ -->
       <article class="cfg-card" data-card="large">
-        <div class="cfg-ph"><span class="cfg-num">03</span><img src="assets/config-large.jpeg" alt="Крупный КЦОД Aitek DC, 10–15 стоек: разрез контейнера с рядом стоек, охлаждением и пожаротушением" loading="lazy" decoding="async" width="1440" height="810"></div>
+        <div class="cfg-ph"><span class="cfg-num">03</span><img src="assets/config-large.jpeg" alt="Крупный АйТек КЦОД, 10–15 стоек: разрез контейнера с рядом стоек, охлаждением и пожаротушением" loading="lazy" decoding="async" width="1440" height="810"></div>
         <div class="cfg-body">
           <h3>Крупный КЦОД</h3>
           <p class="cfg-lead">10–15 стоек для резервного ЦОД, ОПК, распределённой инфраструктуры и критичных сервисов.</p>
@@ -633,7 +656,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
       </article>
       <!-- ЭНЕРГОМОДУЛЬ -->
       <article class="cfg-card" data-card="energy">
-        <div class="cfg-ph"><span class="cfg-num">04</span><img src="assets/config-energy.jpeg" alt="Энергомодуль Aitek DC, 20 футов до 500 кВт: разрез контейнера с ИБП, батарейными шкафами и электрощитами" loading="lazy" decoding="async" width="1440" height="810"></div>
+        <div class="cfg-ph"><span class="cfg-num">04</span><img src="assets/config-energy.jpeg" alt="Энергомодуль АйТек КЦОД, 20 футов до 500 кВт: разрез контейнера с ИБП, батарейными шкафами и электрощитами" loading="lazy" decoding="async" width="1440" height="810"></div>
         <div class="cfg-body">
           <h3>Энергомодуль</h3>
           <p class="cfg-lead">Отдельный 20-футовый контейнер, когда ИБП с батареями, электрощиты и АВР не помещаются в основной модуль.</p>
@@ -695,7 +718,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
     </div>
     <div class="tco-option hl">
       <div class="tco-badge">оптимально на 5+ лет</div>
-      <div class="tco-card-k">КЦОД Aitek DC</div>
+      <div class="tco-card-k">АйТек КЦОД</div>
       <div class="tco-card-v" data-capex="41–45 млн ₽" data-opex="2–4 млн ₽/год">41–45 млн ₽</div>
       <p>Собственный объект, запуск за 3–5 месяцев, ниже расходы владения.</p>
       <div class="tco-when"><span>Когда выбирать</span>Если важен контроль над инфраструктурой и горизонт владения 5+ лет.</div>
@@ -712,7 +735,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
   <div class="cfg-head">
     <div>
       <div class="sl">Инженерные системы</div>
-      <h2 class="st">Технологии внутри Aitek DC</h2>
+      <h2 class="st">Технологии внутри АйТек КЦОД</h2>
       <p class="ss">Все системы интегрируются на производстве — заказчик получает готовый объект, прошедший пусконаладку.</p>
     </div>
     <div class="cfg-pills"><span class="cpill">N / N+1 / 2N</span><span class="cpill">SNMP / API</span><span class="cpill">24/7</span></div>
@@ -730,7 +753,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
 <!-- ============ КЕЙСЫ (доказательство, спущено вниз) ============ -->
 <section class="blk alt" id="cases"><div class="wrap">
   <div class="sl">Реализованные проекты</div>
-  <h2 class="st">Кейсы Aitek DC</h2>
+  <h2 class="st">Кейсы АйТек КЦОД</h2>
   <p class="ss">Реальные конфигурации и инженерные решения на действующих объектах. Полное портфолио проектов - на сайте АйТек.</p>
   <div class="cgrid">
     <div class="ccard"><div class="ph"><img src="assets/case-1.jpg" alt="Контейнерный ЦОД для ВМедА им. С.М. Кирова, Санкт-Петербург" loading="lazy" decoding="async" width="1100" height="825"></div><div class="cbody">
@@ -830,14 +853,14 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
 <section class="blk" id="faq"><div class="wrap">
   <div class="sl">FAQ</div>
   <h2 class="st">Частые вопросы</h2>
-  <p class="ss">Коротко о сроках, экономике, госзакупках, эксплуатации и масштабировании КЦОД Aitek DC.</p>
+  <p class="ss">Коротко о сроках, экономике, госзакупках, эксплуатации и масштабировании АйТек КЦОД.</p>
   <div class="qa">
     <div class="qi"><div class="qq">Сколько времени от договора до запуска контейнерного ЦОД?</div><div class="qa-a">Обычно 3–5 месяцев: проектирование, производство, монтаж инженерных систем, доставка, подключение, пусконаладка и сдача объекта.</div></div>
     <div class="qi"><div class="qq">Чем КЦОД выгоднее colocation и здания ЦОД?</div><div class="qa-a">КЦОД быстрее капитального строительства, даёт полный контроль над данными и снижает долгосрочные расходы по сравнению со сторонним ЦОД.</div></div>
-    <div class="qi"><div class="qq">Чем контейнерный ЦОД отличается от модульного и мобильного?</div><div class="qa-a">Это названия одного класса решений — центр обработки данных заводской готовности. Aitek DC — модульный ЦОД в контейнерном исполнении: модули можно стыковать и наращивать, а сам контейнер при необходимости перевезти на новую площадку, поэтому его называют и мобильным ЦОД.</div></div>
+    <div class="qi"><div class="qq">Чем контейнерный ЦОД отличается от модульного и мобильного?</div><div class="qa-a">Это названия одного класса решений — центр обработки данных заводской готовности. АйТек КЦОД — модульный ЦОД в контейнерном исполнении: модули можно стыковать и наращивать, а сам контейнер при необходимости перевезти на новую площадку, поэтому его называют и мобильным ЦОД.</div></div>
     <div class="qi"><div class="qq">Работаете ли по 44/223-ФЗ и ГОЗ?</div><div class="qa-a">Да. Есть опыт проектов для государственных и оборонных заказчиков, включая техническую документацию и конкурсные процедуры. Купить контейнерный ЦОД можно через тендер: поможем подготовить ТЗ и спецификацию.</div></div>
     <div class="qi"><div class="qq">Что входит в «под ключ»?</div><div class="qa-a">ТЗ, проектирование, контейнер, ИБП, охлаждение, пожаротушение, СКУД, мониторинг, СКС, доставка, подключение, пусконаладка и обучение персонала.</div></div>
-    <div class="qi"><div class="qq">Можно ли эксплуатировать КЦОД в сложных условиях?</div><div class="qa-a">Да. Aitek DC адаптируется под промышленную площадку: мороз, пыль, вибрация, требования к безопасности, автономности и резервированию.</div></div>
+    <div class="qi"><div class="qq">Можно ли эксплуатировать КЦОД в сложных условиях?</div><div class="qa-a">Да. АйТек КЦОД адаптируется под промышленную площадку: мороз, пыль, вибрация, требования к безопасности, автономности и резервированию.</div></div>
     <div class="qi"><div class="qq">Какие гарантии и обслуживание после запуска?</div><div class="qa-a">Гарантия фиксируется в договоре. Поддержка 24/7, удалённый мониторинг, регламентное ТО и выезд инженеров. Срок службы корпуса — 20+ лет.</div></div>
     <div class="qi"><div class="qq">Как масштабироваться после запуска?</div><div class="qa-a">Можно пристыковать дополнительный модуль или тиражировать типовую конфигурацию на другие площадки без пересборки всей инфраструктуры.</div></div>
     <div class="qi"><div class="qq">Куда доставляете и кто выполняет монтаж на месте?</div><div class="qa-a">Доставляем контейнерный ЦОД до площадки заказчика, включая удалённые объекты. Монтаж, подключение и пусконаладку выполняют наши инженеры: до отгрузки проводим обследование площадки, после запуска обучаем персонал и передаём документацию.</div></div>
@@ -962,6 +985,13 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
     <div class="sl">Заявка</div>
     <h2 class="st">Можно без опросного листа: инженер уточнит вводные</h2>
     <p style="color:var(--muted);font-size:16px;margin-top:8px">Подойдёт, если задача ещё не сформулирована до конца или нужно быстро обсудить площадку, сроки и состав КЦОД.</p>
+    <div class="eng-card">
+      <img src="assets/engineer-denis.jpg" alt="Денис Бычков, главный инженер проекта АйТек" width="512" height="768" loading="lazy">
+      <div>
+        <div class="eng-n">Денис Бычков · главный инженер проекта</div>
+        <div class="eng-r">Ведёт ваш проект от ТЗ до сдачи - одно контактное лицо. Ответит лично в течение 1 рабочего часа.</div>
+      </div>
+    </div>
     <div class="form-perks">
       <div class="fp"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Уточним количество стоек, мощность и резервирование</div>
       <div class="fp"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Подскажем, нужен ли энергомодуль, дизель-генератор и основание</div>
@@ -993,7 +1023,7 @@ a.trust .l:hover,.trust a.l:hover{opacity:1;color:var(--blue-dk);text-decoration
 <!-- ============ FOOTER (вариант B: навигация по странице + тонкая строка ©) ============ -->
 <footer class="foot"><div class="wrap">
   <div class="foot-top">
-    <div><div class="logo" style="color:#fff">АйТек <span>· Aitek DC</span></div><div class="foot-addr">Проектируем и производим контейнерные ЦОД. г. Владимир, Октябрьский проспект, 27</div></div>
+    <div><div class="logo" style="color:#fff">АйТек <span>· КЦОД</span></div><div class="foot-addr">Проектируем и производим контейнерные ЦОД. г. Владимир, Октябрьский проспект, 27</div></div>
     <div class="foot-nav">
       <a href="#tasks">Задачи</a><a href="#cases">Проекты</a>
       <a href="#calc">Стоимость</a><a href="#trust">Надёжность</a>
